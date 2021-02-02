@@ -8,28 +8,28 @@
       <p id="user_value" style="text-transform: capitalize;">{{selectedAnchor}}</p>
 
       <ul class="values_list horizontal_center" id="values_list">
-        <li>
-          <a [class.active]="'name' === activeState" (mouseover)="onHover('Hi, My name is ',user.results[0].name.first , 'name')"><img
+        <li [class.active]="'name' === activeState">
+          <a  (mouseover)="onHover('Hi, My name is ',user.results[0].name.first , 'name')"><img
               src="../../assets/svg/misc/user.svg" height="70%" width="70%"></a>
         </li>
-        <li>
-          <a [class.active]="'email' === activeState"  (mouseover)="onHover('My email address is ',user.results[0].email, 'email')"><img
+        <li [class.active]="'email' === activeState" >
+          <a  (mouseover)="onHover('My email address is ',user.results[0].email, 'email')"><img
               src="../../assets/svg/misc/email.svg" height="70%" width="70%"></a>
         </li>
-        <li>
-          <a [class.active]="'birthday' === activeState" (mouseover)="onHover('My birthday is ',user.results[0].dob.date,'birthday',true)"><img
+        <li [class.active]="'birthday' === activeState">
+          <a  (mouseover)="onHover('My birthday is ',user.results[0].dob.date,'birthday',true)"><img
               src="../../assets/svg/misc/calendar.svg" height="70%" width="70%"></a>
         </li>
-        <li>
-          <a [class.active]="'location' === activeState" (mouseover)="onHover('My address is ',user.results[0].location.street.number +' '+ user.results[0].location.street.name,'location')"><img
+        <li [class.active]="'location' === activeState">
+          <a  (mouseover)="onHover('My address is ',user.results[0].location.street.number +' '+ user.results[0].location.street.name,'location')"><img
               src="../../assets/svg/misc/map-location.svg" height="70%" width="70%"></a>
         </li>
-        <li>
-          <a [class.active]="'phone' === activeState" (mouseover)="onHover('My phone number is ',user.results[0].cell, 'phone')"><img
+        <li [class.active]="'phone' === activeState" >
+          <a (mouseover)="onHover('My phone number is ',user.results[0].cell, 'phone')"><img
               src="../../assets/svg/misc/call.svg " height="70%" width="70%"></a>
         </li>
-        <li>
-          <a [class.active]="'locked' === activeState" (mouseover)="onHover('My password is ',user.results[0].login.password, 'locked')"><img
+        <li [class.active]="'locked' === activeState">
+          <a  (mouseover)="onHover('My password is ',user.results[0].login.password, 'locked')"><img
               src="../../assets/svg/misc/locked.svg" height="70%" width="70%"></a>
         </li>
       </ul>
